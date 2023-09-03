@@ -1,9 +1,16 @@
 "use strict";
-let array = [1, 4, 2];
-let result = 0;
-let fun = (x) => {
-    for (let i = 0; i < x.length; i++) {
-        result += array[i];
+/* Create a function that takes an array of numbers as parameters.
+Use a while loop to calculate and return the sum of all the numbers
+in the array. */
+let numArray = [1, 2];
+let sum = 0;
+let i = 0;
+function add(x) {
+    while (i <= numArray.length) {
+        sum += i;
+        i++;
     }
-};
-console.log(result);
+    return sum;
+}
+let funCall = add(numArray);
+console.log(funCall);

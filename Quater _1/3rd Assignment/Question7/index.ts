@@ -1,16 +1,27 @@
-let array : number[] = [1,4,2];
+/* Create a function that takes an array of numbers as parameters.
+Use a while loop to calculate and return the sum of all the numbers
+in the array. */
 
-let result : number = 0;
 
-let fun = (x : number[]) =>{
+let numArray : number[] = [1, 2];
 
-for(let i : number = 0; i < x.length; i++ ){
+let sum : number = 0;
 
-    result += array[i];
+let i = 0;
 
+function add(x:number[]) {
+
+    while(i<=numArray.length){
+
+        sum += i;
+
+        i++;
     }
-
+    return sum;
 }
 
-console.log(result);
+let funCall :number = add(numArray);
+
+console.log(funCall);
+
 
