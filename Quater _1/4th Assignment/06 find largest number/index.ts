@@ -3,18 +3,25 @@
 /* find the largest number from array */
 
 
-let arr : number[] = [1,3,5,1];
+let arr : number[] = [1,3,5,2,-1,-10,1];
 
 let largerNumber : number = 0;
 
-for (let i = 0 ; i<=arr.length; i++){
+let largestNumber = (array : number[])=>{
 
-    if(arr[i] >= largerNumber){
+    for (let i = 0 ; i<=arr.length; i++){
 
-         largerNumber = arr[i];        
+        if(arr[i] >= largerNumber){
+    
+             largerNumber = arr[i];        
+        }
     }
+
+    return largerNumber;
 }
 
-console.log(largerNumber);
+let a = largestNumber(arr);
+
+console.log(a);
 
 
